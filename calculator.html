@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funny Education</title>
+    <link rel="stylesheet" href="/main page/main.css">
+    <link rel="stylesheet" href="/Calculator/calculator.css">
+    <link rel="shortcut icon" href="/images/free-icon-coordinate-18417407.png">
+</head>
+<body background="/images/Фон.png">
+    <header class="header">
+        <div class="header__conteiner">
+            <nav class="header__nav">
+                <img src="/images/Лого.svg" alt="Логотип">
+                <ul class="header__list1">
+                    <li class="header__list1-item">
+                        <a class="header__list1-link" style="color: #3a3a3a;" >Flappy bird</a>
+                    </li>
+                    <li class="header__list1-item">
+                        <a class="header__list1-link" href="/Snake/snake.html">Snake</a>
+                    </li>
+                    <li class="header__list1-item">
+                        <a class="header__list1-link" style="color: #3a3a3a;" >Build function</a>
+                    </li>
+                    <li class="header__list1-item">
+                        <a class="header__list1-link" href="/Calculator/calculator.html">Calculator</a>
+                    </li>
+                </ul>
+                <a class="header__button" href="/main page/main.html">
+                    <img class="header__button-img" src="/images/Main page.svg" alt="На главную">
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="content">
+        <div class="calc" role="application" aria-label="Калькулятор">
+            <input type="text" class="calc__display" id="display" value="0" readonly>
+            <div class="calc__buttons">
+                <button data-action="clear" class="calc__btn calc__btn--clear">C</button>
+                <button data-action="sign" class="calc__btn">±</button>
+                <button data-action="percent" class="calc__btn">%</button>
+                <button data-action="operator" class="calc__btn calc__btn--operator">÷</button>
+
+                <button data-action="digit" class="calc__btn">7</button>
+                <button data-action="digit" class="calc__btn">8</button>
+                <button data-action="digit" class="calc__btn">9</button>
+                <button data-action="operator" class="calc__btn calc__btn--operator">*</button>
+
+                <button data-action="digit" class="calc__btn">4</button>
+                <button data-action="digit" class="calc__btn">5</button>
+                <button data-action="digit" class="calc__btn">6</button>
+                <button data-action="operator" class="calc__btn calc__btn--operator">-</button>
+
+                <button data-action="digit" class="calc__btn">1</button>
+                <button data-action="digit" class="calc__btn">2</button>
+                <button data-action="digit" class="calc__btn">3</button>
+                <button data-action="operator" class="calc__btn calc__btn--operator">+</button>
+                
+                <button data-action="digit" class="calc__btn calc__btn--zero">0</button>
+                <button data-action="digit" class="calc__btn">.</button>
+                <button data-action="operator" class="calc__btn calc__btn--operator">xʸ</button>
+                <button data-action="equals" class="calc__btn calc__btn--equals">=</button>
+            </div>
+        </div>
+    </main>
+
+    <script src="/Calculator/calculator.js"></script>
+</body>
+</html>
