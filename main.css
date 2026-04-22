@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap'); /* откуда импортируется шрифт */
+
+body {
+  font-family: 'Poppins', sans-serif;/* сам шрифт для всего текста в body*/
+  font-weight: 800; /* толщина текста */
+  font-size: 24px ; /* размер текста */
+}
+* { 
+    margin: 0; /* отступ для всех элементов от края сайта =0 */
+    padding: 0; /* отступ между элементами =0 */
+}
+.header__list1-link {     
+    color: #FFFFFF;
+    transition: color 0.3s;       /* задержка при изменениях из-за hover и др */
+    white-space: nowrap  /* заставляет текст отображаться в одну строку */
+}
+.header__list1-link:hover {     /* при наведении на этот элемент вызывает, то что написано в hover */
+    color: #9f95ff;
+}
+
+.header {   /* обращение к классу header */
+    padding: 0px 0px 0px 0px; /* отступ 10px сверху 0 справо 0 снизу 0px слева для header*/
+ }  
+.header__conteiner { /* обращение к классу header__container */
+    max-width:1868px;  /* максимальная ширина header__container */
+    margin-inline: 42px;  /* базовый отступ по горизонтали для header__container */
+}
+.header__nav {     /* обращение к классу header__nav */
+    display: flex;    /* элементы header__nav будут расположены независимо друг от друга (не как список) */  
+}    
+.header__list1 { 
+    display: flex;   /* элементы header__list1 будут расположены независимо друг от друга (не как список) */
+    gap: 100px;
+    margin-right:20px;
+}
+ul {
+    list-style: none;  /* убирает точки перед элементами листа */
+}
+a {  /*обращение к глабольному тегу ссылок БЕЗ ТОЧКИ*/
+    text-decoration: none; /* убирает нижнее подчеркивание ссылок */
+}
+.header__list1 { 
+    padding: 0px 0px 0px 305px;
+}
+
+.header__list1-item {
+    padding-top: 65px;
+}
+.header__button {
+    margin: 30px 0px 0px 40px;
+    padding: 20px 20px 0px 20px;
+    transition: 0,4s;
+    background-color: #6b5bf7;
+    border-radius: 10px;
+}
+.header__button:hover {
+    opacity: 80%;     
+}
